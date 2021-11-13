@@ -24,7 +24,7 @@ Scripts ini bersifat open source, scripts ini di buat bertujuan untuk test prakt
 
 1. Silahkan Clone Link Github ini : 
 ```bash
-    https://github.com/mdede3456/test-backend-pos.git
+   git clone https://github.com/mdede3456/test-backend-pos.git
 ```
 
 
