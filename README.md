@@ -60,17 +60,17 @@ Untuk Documentasi Api yang digunakan di Aplikasi ini, silahkan masuk ke link ber
 ## videoinstall
 
 Berikut Video Link Installasi Aplikasinya
-* [Video Installasi](#)
+* [Video Installasi](https://drive.google.com/file/d/1E0giGHA4zo_DiL9sJVzp1QbVUlvYB0G_/view?usp=sharing)
 
 ## videosistem
 
 Berikut Video Penjelasan Alur Sistemnya
-* [Video Alur Sistem](#)
+* [Video Alur Sistem](https://drive.google.com/file/d/1Fwa9BsJ6dR9wZ1eMHUpadOQ1VVOAya57/view?usp=sharing)
 
 ## videoapi
 
 Berikut Video Penjelasan Api Aplikasi
-* [Video Penggunaan Api](#)
+* [Video Penggunaan Api](https://drive.google.com/file/d/1qvAEIAWjrwkfzRNgTFVJfMJuA2lHS5Vg/view?usp=sharing)
 
 ## License
 
