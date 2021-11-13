@@ -132,27 +132,15 @@
                                 <h5 class="mt-3">Daftar Cabang Toko</h5>
 
                                 <div class="row mt-3">
+                                @foreach ($store->cabang as $c) 
                                     <div class="col-xl-4 col-lg-6">
                                         <div class="card border">
                                             <div class="card-body">
-                                                <div class="badge badge-success float-right">Completed</div>
-                                                <p class="text-success text-uppercase font-size-12 mb-2">Web
-                                                    Design</p>
-                                                <h5><a href="#" class="text-dark">Landing page Design</a>
+                                                <div class="badge badge-success float-right">Aktiv</div>
+                                                <p class="text-success text-uppercase font-size-12 mb-2">{{$c->created_at}}</p>
+                                                <h5><a href="#" class="text-dark">{{$c->name}} </a>
                                                 </h5>
-                                                <p class="text-muted mb-4">If several languages coalesce,
-                                                    the grammar of the resulting language is more regular.
-                                                </p>
-
-                                                <div>
-                                                    <a href="javascript: void(0);">
-                                                        <img src="assets/images/users/avatar-2.jpg" alt="" class="avatar-sm m-1 rounded-circle">
-                                                    </a>
-                                                    <a href="javascript: void(0);">
-                                                        <img src="assets/images/users/avatar-3.jpg" alt="" class="avatar-sm m-1 rounded-circle">
-                                                    </a>
-
-                                                </div>
+                                                <p class="text-muted mb-4">{{$c->kota}}, {{$c->provinsi}}, {{$c->address}}  </p> 
                                             </div>
                                             <div class="card-body border-top">
                                                 <div>
@@ -160,21 +148,9 @@
                                                         <ul class="list-inline">
                                                             <li class="list-inline-item pr-2">
                                                                 <a href="#" class="text-muted d-inline-block" data-toggle="tooltip" data-placement="top" title="" data-original-title="Due date">
-                                                                    <i class="uil uil-calender mr-1"></i> 15
-                                                                    Dec
+                                                                    <i class="uil uil-calender mr-1"></i><b>100</b> Jumlah Transaksi
                                                                 </a>
-                                                            </li>
-                                                            <li class="list-inline-item pr-2">
-                                                                <a href="#" class="text-muted d-inline-block" data-toggle="tooltip" data-placement="top" title="" data-original-title="Tasks">
-                                                                    <i class="uil uil-bars mr-1"></i> 56
-                                                                </a>
-                                                            </li>
-                                                            <li class="list-inline-item">
-                                                                <a href="#" class="text-muted d-inline-block" data-toggle="tooltip" data-placement="top" title="" data-original-title="Comments">
-                                                                    <i class="uil uil-comments-alt mr-1"></i>
-                                                                    224
-                                                                </a>
-                                                            </li>
+                                                            </li> 
                                                         </ul>
                                                     </div>
                                                     <div class="pt-2">
@@ -187,8 +163,7 @@
                                         </div>
                                         <!-- end card -->
                                     </div>
-
-
+                                    @endforeach
                                 </div>
                                 <!-- end row -->
                             </div>
