@@ -2,13 +2,13 @@
  <div class="navbar navbar-expand flex-column flex-md-row navbar-custom">
      <div class="container-fluid">
          <!-- LOGO -->
-         <a href="index.html" class="navbar-brand mr-0 mr-md-2 logo">
+         <a href="{{route('admin.dashboard')}}" class="navbar-brand mr-0 mr-md-2 logo">
              <span class="logo-lg">
-                 <img src="{{asset('assets/images/logo.png')}}" alt="" height="24" />
-                 <span class="d-inline h5 ml-1 text-logo">TEST POS</span>
+                 <img src="{{asset($setting->logo)}}" alt="" height="24" />
+                 <span class="d-inline h5 ml-1 text-logo">{{$setting->app_name}}</span>
              </span>
              <span class="logo-sm">
-                 <img src="{{asset('assets/images/logo.png')}}" alt="" height="24">
+                 <img src="{{asset($setting->logo)}}" alt="" height="24">
              </span>
          </a>
 
@@ -33,7 +33,8 @@
                  </div>
              </li>
 
-           
+
+
              <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="{{count($notif)}} notifikasi baru">
                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                      <i data-feather="bell"></i>
@@ -66,10 +67,11 @@
                          @endforeach
 
 
+
                      </div>
 
                      <!-- All-->
-                     <a href="{{route('owner.notif')}}" class="dropdown-item text-center text-primary notify-item notify-all border-top"> Lihat Semua
+                     <a href="{{route('kasir.notif')}}" class="dropdown-item text-center text-primary notify-item notify-all border-top"> Lihat Semua
                          <i class="fi-arrow-right"></i>
                      </a>
 
@@ -77,7 +79,7 @@
              </li>
 
              <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="Keluar Dari Aplikasi">
-                 <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link">
+                 <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link ">
                      <i data-feather="log-out"></i>
                  </a>
                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -85,7 +87,7 @@
                  </form>
              </li>
 
-            
+
          </ul>
      </div>
 

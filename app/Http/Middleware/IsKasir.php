@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class IsOwner
+class IsKasir
 {
     /**
      * Handle an incoming request.
@@ -17,6 +17,6 @@ class IsOwner
      */
     public function handle(Request $request, Closure $next)
     {
-        return Auth::check() && Auth::user()->role == 'owner'  ? $next($request) :   redirect()->route('home'); 
+        return Auth::check() && Auth::user()->role == 'kasir'  ? $next($request) :   redirect()->route('home'); 
     }
 }

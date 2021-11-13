@@ -37,7 +37,7 @@ class AdminController extends Controller
 
     public function allread()
     { 
-        Notification::where("status","no")->update(["status" => "read"]);
+        Notification::where("for","admin")->where("status","no")->update(["status" => "read"]);
         return back()->with(['flash' => "Notifikasi berhasil ditandai sebagai terbaca"]);
     }
 

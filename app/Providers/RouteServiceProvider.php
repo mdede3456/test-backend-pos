@@ -46,10 +46,14 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
-            
+
             Route::middleware('web')
                 ->prefix('admin-mdh')
                 ->group(base_path('routes/admin.php'));
+
+            Route::middleware('web')
+                ->prefix('kasir-app')
+                ->group(base_path('routes/kasir.php'));
         });
     }
 

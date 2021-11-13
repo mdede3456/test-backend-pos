@@ -79,7 +79,7 @@
              </li>
 
              <li class="dropdown notification-list" data-toggle="tooltip" data-placement="left" title="Keluar Dari Aplikasi">
-                 <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link right-bar-toggle">
+                 <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="nav-link ">
                      <i data-feather="log-out"></i>
                  </a>
                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
